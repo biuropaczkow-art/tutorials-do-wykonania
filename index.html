@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlista "Do wykonania" - Tutoriale</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; 
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #eee;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stats {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+        }
+        .stats span { margin: 0 1rem; font-size: 1.2rem; }
+        .tutorial-list {
+            list-style: none;
+        }
+        .tutorial-item {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .tutorial-item:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-color: rgba(0,217,255,0.3);
+        }
+        .tutorial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .tutorial-number {
+            background: linear-gradient(45deg, #00d9ff, #00ff88);
+            color: #000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .tutorial-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #00d9ff;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            margin-top: 1rem;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(45deg, #00d9ff, #00ff88);
+            transition: width 0.3s;
+        }
+        .progress-text {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Tutorialy z Playlisty "Do wykonania"</h1>
+        <div class="stats">
+            <span><strong>8</strong> filmów</span>
+            <span><strong>7</strong> kompletnych tutoriali</span>
+        </div>
+        
+        <ul class="tutorial-list">
+            <li class="tutorial-item">
+                <div class="tutorial-header">
+                    <div class="tutorial-number">1</div>
+                    <h2 class="tutorial-title">Install Windows 11 on Android Phone... (Yes, It's Possible!)</h2>
+                </div>
+                <p>Instalacja Windows 11 ARM na telefonach z Androidem przy użyciu TWRP</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                <div class="progress-text">✓ Gotowe</div>
+            </li>
+            
+            <li class="tutorial-item">
+                <div class="tutorial-header">
+                    <div class="tutorial-number">2</div>
+                    <h2 class="tutorial-title">I Install Windows 11 on Samsung Phone.....(NOT AN EMULATOR)</h2>
+                </div>
+                <p>Alternatywna metoda instalacji Windows 11 na Samsungach</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                <div class="progress-text">✓ Gotowe</div>
+            </li>
+            
+            <li class="tutorial-item">
+                <div class="tutorial-header">
+                    <div class="tutorial-number">3</div>
+                    <h2 class="tutorial-title">The SIM Card Hack You're Not Supposed to Know About</h2>
+                </div>
+                <p>Informacja o bezpieczeństwie SIM card i jak się zabezpieczyć</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                <div class="progress-text">✓ Gotowe</div>
+            </li>
+            
+            <li class="tutorial-item">
+                <div class="tutorial-header">
+                    <div class="tutorial-number">4</div>
+                    <h2 class="tutorial-title">Poradnik Hermes Agent na Hostinger</h2>
+                </div>
+                <p>Jak zainstalować i skonfigurować Hermes Agenta na VPS Hostinger</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                <div class="progress-text">✓ Gotowe</div>
+            </li>
+            
+            <li class="tutorial-item">
+                <div class="tutorial-header">
+                    <div class="tutorial-number">5</div>
+                    <h2 class="tutorial-title">Jak Tworzyć i Publikować PRAWDZIWE Aplikacje Webowe</h2>
+                </div>
+                <p>Kompletny przewodnik po tworzeniu aplikacji z Google AI + Firebase</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                <div class="progress-text">✓ Gotowe</div>
+            </li>
+            
+            <li class="tutorial-item">
+                <div class="tutorial-header">
+                    <div class="tutorial-number">6</div>
+                    <h2 class="tutorial-title">Jak Poprawnie Wdrożyć Strony Internetowe Google AI Studio</h2>
+                </div>
+                <p>Krok po kroku - wdrożenie stron z Google AI Studio</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                <div class="progress-text">✓ Gotowe</div>
+            </li>
+            
+            <li class="tutorial-item">
+                <div class="tutorial-header">
+                    <div class="tutorial-number">7</div>
+                    <h2 class="tutorial-title">Kompletny Przewodnik dla Początkujących po Vibe Coding</h2>
+                </div>
+                <p>Wszystko o Vibe Coding - nowatorskim podejściu do programowania</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                <div class="progress-text">✓ Gotowe</div>
+            </li>
+            
+            <li class="tutorial-item">
+                <div class="tutorial-header">
+                    <div class="tutorial-number">8</div>
+                    <h2 class="tutorial-title">I Built an UNCENSORED AI app For Hacking</h2>
+                </div>
+                <p>Jak zbudować AI aplikację do hackingu (etykączne podejście)</p>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                <div class="progress-text">✓ Gotowe</div>
+            </li>
+        </ul>
+        
+        <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: rgba(0,255,136,0.1); border-radius: 12px;">
+            <h3>📊 Podsumowanie</h3>
+            <p>Wszystkie 8 filmów z playlisty "Do wykonania" zostały przetworzone i opisane.</p>
+            <p>🔧 <a href="https://github.com/hermes-ai/tutorials-do-wykonania" style="color: #00d9ff;">GitHub Repozytorium</a></p>
+        </div>
+    </div>
+</body>
+</html>
